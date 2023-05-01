@@ -41,12 +41,14 @@
 .enter,
 .del{
     width: 80px;
+    background-color: bisque;
 }
 
 .backspace,
 .shift_left,
 .shift_right {
     width: 120px;
+    background-color: bisque;
 }
 
 .arrow_up,
@@ -54,10 +56,23 @@
 .arrow_right,
 .arrow_down {
     width: 60px;
+    background-color: beige;
 }
 
 .space {
     max-width: 372px;
     width: 100%;
+    background-color: bisque;
 }
 
+.display {
+    height: 200px;
+    max-width: 868px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #000;
+}
+.active {
+    background-color: orange;
+}
