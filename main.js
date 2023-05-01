@@ -2,85 +2,84 @@ let board = document.querySelector('body');
 
 board.innerHTML = `
     <div class = 'container'>
-      <h1>Virtual Keyboard</h1>
-      <div class="keyboard_wrapper">
+      <h1>Virtual Keyboard</h1> 
     <pre class="display"></pre>
-    <div class="key">
+    <div class="keyboard">
         <div class="row">
-            <span class ="backquote">\`</span>
-            <span data-key="1">1</span>
-            <span data-key="2">2</span>
-            <span data-key="3">3</span>
-            <span data-key="4">4</span>
-            <span data-key="5">5</span>
-            <span data-key="6">6</span>
-            <span data-key="7">7</span>
-            <span data-key="8">8</span>
-            <span data-key="9">9</span>
-            <span data-key="0">0</span>
-            <span data-key="-">-</span>
-            <span data-key="=">=</span>
-            <span class ="backspace">backspace</span>
+            <span class ="backquote key">\`</span>
+            <span class = "key" data-key="1">1</span>
+            <span class = "key" data-key="2">2</span>
+            <span class = "key" data-key="3">3</span>
+            <span class = "key" data-key="4">4</span>
+            <span class = "key" data-key="5">5</span>
+            <span class = "key" data-key="6">6</span>
+            <span class = "key" data-key="7">7</span>
+            <span class = "key" data-key="8">8</span>
+            <span class = "key" data-key="9">9</span>
+            <span class = "key" data-key="0">0</span>
+            <span class = "key" data-key="-">-</span>
+            <span class = "key" data-key="=">=</span>
+            <span class ="backspace key">backspace</span>
         </div>
         <div class="row">
-            <span class="tab">tab</span>
-            <span data-key="q">q</span>
-            <span data-key="w">w</span>
-            <span data-key="e">e</span>
-            <span data-key="r">r</span>
-            <span data-key="t">t</span>
-            <span data-key="y">y</span>
-            <span data-key="u">u</span>
-            <span data-key="i">i</span>
-            <span data-key="o">o</span>
-            <span data-key="p">p</span>
-            <span data-key="[">[</span>
-            <span data-key="]">]</span>
-            <span class ="del">del</span>
+            <span class="tab key">tab</span>
+            <span  class = "key" data-key="q">q</span>
+            <span  class = "key" data-key="w">w</span>
+            <span  class = "key" data-key="e">e</span>
+            <span  class = "key" data-key="r">r</span>
+            <span  class = "key" data-key="t">t</span>
+            <span  class = "key" data-key="y">y</span>
+            <span  class = "key" data-key="u">u</span>
+            <span  class = "key" data-key="i">i</span>
+            <span  class = "key" data-key="o">o</span>
+            <span  class = "key" data-key="p">p</span>
+            <span  class = "key" data-key="[">[</span>
+            <span  class = "key" data-key="]">]</span>
+            <span class ="del key">del</span>
         </div>
         <div class="row">
-            <span class ="capslock">capslock</span>
-            <span data-key="a">a</span>
-            <span data-key="s">s</span>
-            <span data-key="d">d</span>
-            <span data-key="f">f</span>
-            <span data-key="g">g</span>
-            <span data-key="h">h</span>
-            <span data-key="j">j</span>
-            <span data-key="k">k</span>
-            <span data-key="l">l</span>
-            <span data-key=";">;</span>
-            <span data-key="'">'</span>
-            <span data-key="\\">\\</span>
-            <span class="enter">enter</span>
+            <span class ="capslock key">capslock</span>
+            <span class = "key" data-key="a">a</span>
+            <span class = "key" data-key="s">s</span>
+            <span class = "key" data-key="d">d</span>
+            <span class = "key" data-key="f">f</span>
+            <span class = "key" data-key="g">g</span>
+            <span class = "key" data-key="h">h</span>
+            <span class = "key" data-key="j">j</span>
+            <span class = "key" data-key="k">k</span>
+            <span class = "key" data-key="l">l</span>
+            <span class = "key" data-key=";">;</span>
+            <span class = "key" data-key="'">'</span>
+            <span class = "key" data-key="\\">\\</span>
+            <span class="enter key">enter</span>
         </div>
         <div class="row">
-            <span class="shift_left">shift</span>
-            <span data-key="z">z</span>
-            <span data-key="x">x</span>
-            <span data-key="c">c</span>
-            <span data-key="v">v</span>
-            <span data-key="b">b</span>
-            <span data-key="n">n</span>
-            <span data-key="m">m</span>
-            <span data-key=",">,</span>
-            <span data-key=".">.</span>
-            <span data-key="/">/</span>
-            <span class="arrow_up">arrow_up</span>
-            <span class="shift_right">shift</span>
+            <span class="shift_left key">shift</span>
+            <span class = "key" data-key="z">z</span>
+            <span class = "key" data-key="x">x</span>
+            <span class = "key" data-key="c">c</span>
+            <span class = "key" data-key="v">v</span>
+            <span class = "key" data-key="b">b</span>
+            <span class = "key" data-key="n">n</span>
+            <span class = "key" data-key="m">m</span>
+            <span class = "key" data-key=",">,</span>
+            <span class = "key" data-key=".">.</span>
+            <span class = "key" data-key="/">/</span>
+            <span class="arrow_up key">arrow</span>
+            <span class="shift_right key">shift</span>
         </div>
         <div class="row">
-            <span class="ctrl_left">ctrl</span>
-            <span class="meta_tag">win</span>
-            <span class="alt_left">alt</span>
-            <span class="space" data-key=" ">
+            <span class="ctrl_left key">ctrl</span>
+            <span class="meta_tag key">win</span>
+            <span class="alt_left key">alt</span>
+            <span class="space key" data-key=" ">
                 Space
             </span>
-            <span class="alt_right">alt</span>
-            <span class="arrow_left">left</span>
-            <span class="arrow_down">arrow_down</span>
-            <span class="arrow_right">arrow_right</span>
-            <span class="shift_right">shift</span>
+            <span class="alt_right key">alt</span>
+            <span class="arrow_left key">arrow</span>
+            <span class="arrow_down key">arrow</span>
+            <span class="arrow_right key">arrow</span>
+            <span class="ctrl_right key">ctrl</span>
         </div>
     </div>
 </div>
